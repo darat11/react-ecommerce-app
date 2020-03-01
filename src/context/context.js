@@ -8,8 +8,9 @@ class ProductProvider extends Component {
   state = {
     sidebarOpen: false,
     cartOpen: false,
-    cartItems: 0,
-    links: linkData
+    cartItems: 2,
+    links: linkData,
+    cart: []
   };
 
   // handle sidebar
@@ -38,7 +39,7 @@ class ProductProvider extends Component {
         value={{
           ...this.state,
           handleSidebar: this.handleSidebar,
-          handleCart: this.handleSidebar,
+          handleCart: this.handleCart,
           closeCart: this.closeCart,
           openCart: this.openCart
         }}
