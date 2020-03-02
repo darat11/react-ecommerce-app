@@ -15,7 +15,7 @@ export default function Sidebar() {
                 return (
                   <li key={link.id}>
                     <Link
-                      to={Link.path}
+                      to={link.path}
                       className="sidebar-link"
                       onClick={handleSidebar}
                     >
