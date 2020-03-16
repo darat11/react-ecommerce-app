@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 import SideCart from "./components/SideCart";
+import side from "./"
 
 function App() {
   return (
