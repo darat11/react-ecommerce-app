@@ -11,7 +11,7 @@ export default function Featured() {
         {/* title */}
         <Title title="featured products" center="true" />
         {/* products */}
-        <div className="row">
+        <div className="row my-5">
           <ProductConsumer>
             {value => {
               const { featuredProducts } = value;
@@ -20,6 +20,13 @@ export default function Featured() {
               ));
             }}
           </ProductConsumer>
+        </div>
+        <div className="row mt-5">
+          <div className="col text-center">
+            <Link to="/products" className="main-link">
+              our products
+            </Link>
+          </div>
         </div>
       </div>
     </section>
